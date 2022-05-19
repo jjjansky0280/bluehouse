@@ -7,6 +7,11 @@
 body {
     background-image: url(images/Background-Image.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main {
+    width: 100%;
 }
 
 .logo {
@@ -14,7 +19,7 @@ body {
     top: 0;
     left: 50%;
     width: 400px;
-    margin-left: -200px;
+    margin-left: -220px;
     margin-top: -5px;
     z-index: 999
 ;
@@ -25,30 +30,22 @@ ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 27rem;
     background-color: rgb(79,44,21);
-    height: 5.1em;
     margin-top: 5%;
+}
+
+ul li:nth-child(2){
+    margin-right: 500px;
+}
+
+ul li:nth-child(3), ul li:last-of-type {
+    transform: translateX(-70px);
 }
 
 ul li {
     transform: translateX(-33px);
 }
 
-ul li a:last-of-type {
-    margin-left: 1em;
-}
-
-.hero {
-    width: 800px;
-    position: absolute;
-    top: 300px;
-    left: 50%;
-    margin-left: -400px;
-    z-index: -1;
-    border: 10px solid black;
-
-}
 
 ul li a {
     color: white;
@@ -82,6 +79,18 @@ ul li a:hover::after {
     color: black;
 }
 
+.photo {
+    width: 50%;
+    margin: 20em auto;
+    z-index: -1;
+    text-align: center;
+}
+
+.hero{
+    border: 10px solid black;
+    width: 100%;
+}
+
 
 .carousel {
     width: 1000px;
@@ -109,4 +118,61 @@ ul li a:hover::after {
 }
 
 
+@media (max-width:1250px) {
+    .logo {
+        display: none;
+    }
 
+    ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li a{
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        width:155px;
+        text-align: center;
+    }
+
+    ul li:nth-child(2){
+        margin-right: 0;
+    }
+    
+    ul li:nth-child(3), ul li:last-of-type {
+        transform: translateX(0);
+    }
+    
+    ul li {
+        transform: translateX(0);
+    }
+    
+
+    .carousel {
+        width: 80%;
+        margin: 5em auto;
+    }
+    
+    .carousel-item {
+        text-align: center;
+    }
+    
+    .carousel-img {
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .photo{
+        margin-top: 5em;
+    }
+}
+    
+    
