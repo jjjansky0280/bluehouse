@@ -20,7 +20,7 @@ body {
     top: 0;
     left: 50%;
     width: 400px;
-    margin-left: -220px;
+    margin-left: -200px;
     margin-top: -5px;
     z-index: 999
 ;
@@ -32,23 +32,19 @@ ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: .5em;
+    gap: 1em;
     background-color: rgb(79,44,21);
     padding: 1em 0;
     margin-top: 5%;
 }
 
-ul li:nth-child(2){
-    margin-right: 500px;
+.space-left {
+    margin-left: 7em;
+}
+.space-right {
+    margin-right: 7em;
 }
 
-ul li:nth-child(3), ul li:last-of-type {
-    transform: translateX(-70px);
-}
-
-ul li {
-    transform: translateX(-33px);
-}
 
 
 ul li a {
@@ -168,17 +164,13 @@ ul li a:hover::after {
         text-align: center;
     }
 
-    ul li:nth-child(2){
-        margin-right: 0;
+    .space-left {
+        margin-left: 0em;
+    }
+    .space-right {
+        margin-right: 0em;
     }
     
-    ul li:nth-child(3), ul li:last-of-type {
-        transform: translateX(0);
-    }
-    
-    ul li {
-        transform: translateX(0);
-    }
     
 
     .carousel {
