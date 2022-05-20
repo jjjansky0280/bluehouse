@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-image: url(images/Background-Image.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom center;
     background-attachment: fixed;
+    background-position: top;
 }
 
 .main {
@@ -142,6 +143,11 @@ ul li a:hover::after {
 
 
 @media (max-width:1250px) {
+    
+    body {
+        background-image: linear-gradient(to bottom, #D0D6B3, #AAAE7F, #4F2C15);
+        background-repeat: no-repeat;
+    }
     .logo {
         display: none;
     }
