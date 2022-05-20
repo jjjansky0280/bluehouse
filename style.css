@@ -155,7 +155,7 @@ ul li a:hover::after {
     ul {
         flex-direction: column;
         margin: 0;
-        padding: 0;
+        padding: .5em 0;
     }
 
     ul li {
@@ -196,7 +196,8 @@ ul li a:hover::after {
     }
     
     .photo{
-        margin-top: 5em;
+        margin: 3em 1em;
+        width: auto;
     }
 
     .album {
